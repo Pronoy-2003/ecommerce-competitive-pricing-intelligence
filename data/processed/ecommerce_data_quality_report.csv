@@ -1,0 +1,32 @@
+check_name,status,actual_value,expected_value,severity,overall_quality_score
+Expected columns present,PASS,None,None,ERROR,100.0
+No unexpected columns,PASS,None,None,WARNING,100.0
+Dataset contains records,PASS,4577,> 0,ERROR,100.0
+Missing values - platform,PASS,0,0,ERROR,100.0
+Missing values - product_id,PASS,0,0,ERROR,100.0
+Missing values - product_name,PASS,0,0,ERROR,100.0
+Missing values - brand,PASS,0,0,ERROR,100.0
+Missing values - category,PASS,0,0,ERROR,100.0
+Missing values - variant,PASS,0,0,ERROR,100.0
+Missing values - mrp,PASS,0,0,ERROR,100.0
+Missing values - selling_price,PASS,0,0,ERROR,100.0
+Missing values - discount_pct,PASS,0,0,ERROR,100.0
+Missing values - city,PASS,0,0,ERROR,100.0
+Missing values allowed - rating,PASS,41,Allowed,INFO,100.0
+Missing values allowed - review_count,PASS,41,Allowed,INFO,100.0
+Exact duplicate rows,PASS,0,0,ERROR,100.0
+Business-key uniqueness,PASS,0,0,ERROR,100.0
+MRP greater than zero,PASS,0,0,ERROR,100.0
+Selling price greater than zero,PASS,0,0,ERROR,100.0
+Selling price <= MRP,PASS,0,0,ERROR,100.0
+Discount percentage between 0 and 100,PASS,0,0,ERROR,100.0
+Ratings between 0 and 5,PASS,0,0,ERROR,100.0
+Review count is non-negative,PASS,0,0,ERROR,100.0
+Valid latitude,PASS,0,0,ERROR,100.0
+Valid longitude,PASS,0,0,ERROR,100.0
+Valid platform values,PASS,None,"Amazon, Flipkart",ERROR,100.0
+Valid city values,PASS,None,"Bengaluru, Delhi, Guwahati, Hyderabad, Mumbai",ERROR,100.0
+Category validation,PASS,None,Known project categories,WARNING,100.0
+Price outlier flag valid,PASS,Valid boolean values,True / False,ERROR,100.0
+Valid scrape timestamps,PASS,0,0,WARNING,100.0
+Platform-city coverage,PASS,All combinations present,All expected combinations present,WARNING,100.0
